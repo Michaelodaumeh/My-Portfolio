@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+  <title>Michael Odaumeh - Frontend Developer</title>
+  <meta name="description" content="Michael Odaumeh - Frontend Developer specializing in React, JavaScript, and modern web technologies. View my portfolio of projects and get in touch.">
+  <meta name="keywords" content="frontend developer, React developer, JavaScript, web development, portfolio, Michael Odaumeh">
+  <meta name="author" content="Michael Odaumeh">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://michaelodaumeh.github.io/">
+  <meta property="og:title" content="Michael Odaumeh - Frontend Developer">
+  <meta property="og:description" content="Frontend Developer specializing in React, JavaScript, and modern web technologies. View my portfolio of projects and get in touch.">
+  <meta property="og:image" content="https://michaelodaumeh.github.io/images/michael.jpg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://michaelodaumeh.github.io/">
+  <meta property="twitter:title" content="Michael Odaumeh - Frontend Developer">
+  <meta property="twitter:description" content="Frontend Developer specializing in React, JavaScript, and modern web technologies. View my portfolio of projects and get in touch.">
+  <meta property="twitter:image" content="https://michaelodaumeh.github.io/images/michael.jpg">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Michael Odaumeh",
+    "jobTitle": "Frontend Developer",
+    "description": "Frontend Developer specializing in React, JavaScript, and modern web technologies",
+    "url": "https://michaelodaumeh.github.io/",
+    "sameAs": [
+      "https://github.com/Michaelodaumeh",
+      "https://www.linkedin.com/in/michael-odaumeh-90b240290"
+    ],
+    "email": "Michaelodaumeh@gmail.com"
+  }
+  </script>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Preload critical resources -->
+  <link rel="preload" href="images/michael.jpg" as="image">
+  <link rel="preload" href="style.css" as="style">
+</head>
+<body>
+  <!-- Skip Navigation -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  
+  <!-- Navbar -->
+  <nav>
+    <h2 class="logo">Michael Odaumeh</h2>
+    <ul>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button id="dark-mode-toggle" aria-label="Toggle dark mode" title="Switch between light and dark theme">🌙</button>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero" id="main-content">
+    <img src="images/michael.jpg" alt="Michael Odaumeh - Professional headshot" class="profile-pic" loading="eager" width="200" height="200">
+    <h1>Hello, I'm <span>Michael Odaumeh</span></h1>
+    <p>Frontend Developer & Software Engineer</p>
+    <p class="hero-subtitle">Creating beautiful, functional web experiences with modern technologies</p>
+    <div class="hero-buttons">
+      <a href="#cta" class="hero-btn-primary">
+        Get In Touch
+      </a>
+      <a href="#projects" class="hero-btn-secondary">
+        View My Work
+      </a>
+    </div>
+  </header>
+
+  <!-- Featured Projects -->
+  <section id="projects" aria-labelledby="projects-heading">
+    <h2 id="projects-heading">Featured Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card" data-category="games">
+        <a href="https://michaelodaumeh.github.io/Jeopardy/" target="_blank">
+          <img src="images/project2.png" alt="Interactive Jeopardy Game - Screenshot showing game interface with questions and scoring" class="project-img" loading="lazy" width="400" height="300">
+        </a>
+        <h3>Interactive Jeopardy Game</h3>
+        <p>A fully interactive Jeopardy-style quiz game built with HTML, CSS, and JavaScript. Features dynamic questions fetched from an API, real-time scoring system, and two-player mode for competitive gameplay.</p>
+        <div class="project-tech-stack">
+          <span class="tech-badge html">HTML5</span>
+          <span class="tech-badge css">CSS3</span>
+          <span class="tech-badge js">JavaScript</span>
+          <span class="tech-badge api">API</span>
+        </div>
+        <div class="project-links">
+          <a href="https://michaelodaumeh.github.io/Jeopardy/" target="_blank" class="project-link">🌐 Live Demo</a>
+          <a href="https://github.com/Michaelodaumeh/Jeopardy" target="_blank" class="project-link">📁 GitHub</a>
+        </div>
+      </div>
+      <div class="project-card" data-category="web">
+        <a href="https://michaelodaumeh.github.io/Meme-Exercise/" target="_blank">
+          <img src="images/project3.png" alt="Interactive Meme Generator - Screenshot showing meme creation interface with text overlay tools" class="project-img" loading="lazy" width="400" height="300">
+        </a>
+        <h3>Interactive Meme Generator</h3>
+        <p>A fully interactive web application that enables users to create custom memes with advanced features including image upload via URL, drag-and-drop text positioning, real-time text editing, and PNG download functionality.</p>
+        <div class="project-tech-stack">
+          <span class="tech-badge html">HTML5</span>
+          <span class="tech-badge css">CSS3</span>
+          <span class="tech-badge js">JavaScript</span>
+          <span class="tech-badge api">Canvas API</span>
+        </div>
+        <div class="project-links">
+          <a href="https://michaelodaumeh.github.io/Meme-Exercise/" target="_blank" class="project-link">🌐 Live Demo</a>
+          <a href="https://github.com/Michaelodaumeh/Meme-Exercise" target="_blank" class="project-link">📁 GitHub</a>
+        </div>
+      </div>
+    </div>
+    <div class="more-projects">
+      <a href="projects.html" class="btn">View All Projects</a>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education">
+    <h2>Education</h2>
+    <div class="education-card">
+      <h3 class="education-title">Springboard Enterprise Software Development Career Program</h3>
+      <p class="education-subtitle">Enterprise Software Development Certificate</p>
+      <p class="education-description">Comprehensive program covering enterprise-level frontend development, including modern JavaScript frameworks, responsive design, user experience principles, and industry best practices for scalable web applications.</p>
+      <p class="education-date">Expected Graduation: 2025</p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Technical Skills</h2>
+    <div class="skills-container">
+      <div class="skills-grid">
+        <div class="skill-category">
+          <div class="skill-header">
+            <h4>Frontend Technologies</h4>
+          </div>
+          <p class="skill-content">HTML5, CSS3, JavaScript (ES6+), React</p>
+        </div>
+        <div class="skill-category">
+          <div class="skill-header">
+            <h4>Development Tools</h4>
+          </div>
+          <p class="skill-content">Git/GitHub, VS Code, Chrome DevTools</p>
+        </div>
+        <div class="skill-category">
+          <div class="skill-header">
+            <h4>Design & UX</h4>
+          </div>
+          <p class="skill-content">Responsive Design, User Experience, Accessibility</p>
+        </div>
+        <div class="skill-category">
+          <div class="skill-header">
+            <h4>APIs & Integration</h4>
+          </div>
+          <p class="skill-content">REST APIs, JSON, Fetch API, Async/Await</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I'm a passionate frontend developer with a strong foundation in modern web technologies, currently completing the Enterprise Software Development Career Program at Springboard. I specialize in creating responsive, user-friendly applications that deliver exceptional user experiences. My approach combines technical expertise with creative problem-solving, always focusing on clean code and best practices.</p>
+    <p class="about-paragraph">Through my enterprise software development program, I've gained hands-on experience with modern frontend frameworks, responsive design principles, and user experience optimization. This comprehensive training has equipped me with the skills needed to build robust, scalable frontend solutions. When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or working on personal projects that challenge me to grow as a developer.</p>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="testimonials-section">
+    <h2>What People Say</h2>
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <div class="testimonial-content">
+          <p>"Michael demonstrates exceptional attention to detail and a strong understanding of modern web development practices. His projects showcase both technical skill and creative problem-solving."</p>
+        </div>
+        <div class="testimonial-author">
+          <h4>Springboard Mentor</h4>
+          <span>Enterprise Software Development Program</span>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-content">
+          <p>"Michael's portfolio projects demonstrate a clear progression in skill development. His interactive applications show strong JavaScript fundamentals and user experience considerations."</p>
+        </div>
+        <div class="testimonial-author">
+          <h4>Peer Developer</h4>
+          <span>Springboard Cohort</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resume Section -->
+  <section id="resume">
+    <h2>Resume</h2>
+    <div class="resume-container">
+      <div class="resume-buttons">
+        <a href="resume.html" target="_blank" class="resume-btn">
+          👁️ View Resume
+        </a>
+        <a href="resume.html" download="Michael_Odaumeh_Resume.html" class="resume-btn">
+          📄 Download Resume
+        </a>
+      </div>
+      <p class="resume-info">HTML format • Updated September 2025</p>
+    </div>
+  </section>
+
+  <!-- Call to Action Section -->
+  <section id="cta" class="cta-section">
+    <h2 class="cta-title">Ready to Build Something Amazing?</h2>
+    <p class="cta-description">I'm actively seeking frontend development opportunities and would love to discuss how I can contribute to your team.</p>
+    <div class="cta-buttons">
+      <a href="mailto:Michaelodaumeh@gmail.com" class="cta-btn-primary">
+        💼 Let's Talk
+      </a>
+      <a href="resume.html" target="_blank" class="cta-btn-secondary">
+        📄 View Resume
+      </a>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Get In Touch</h2>
+    <p>I'm always interested in new opportunities and exciting projects. Let's connect!</p>
+    <div class="contact-links">
+      <a href="mailto:Michaelodaumeh@gmail.com" class="contact-link">
+        📧 Email Me
+      </a>
+      <a href="https://github.com/Michaelodaumeh" target="_blank" class="contact-link">
+        🌐 GitHub
+      </a>
+      <a href="https://www.linkedin.com/in/michael-odaumeh-90b240290" target="_blank" class="contact-link">
+        💼 LinkedIn
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Michael Odaumeh. All Rights Reserved.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+  <title>Projects - Michael Odaumeh</title>
+  <meta name="description" content="Explore Michael Odaumeh's portfolio of web development projects including interactive applications, games, and modern web solutions.">
+  <meta name="keywords" content="frontend developer, React developer, JavaScript, web development, portfolio, projects, Michael Odaumeh">
+  <meta name="author" content="Michael Odaumeh">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://michaelodaumeh.github.io/projects.html">
+  <meta property="og:title" content="Projects - Michael Odaumeh">
+  <meta property="og:description" content="Explore Michael Odaumeh's portfolio of web development projects including interactive applications, games, and modern web solutions.">
+  <meta property="og:image" content="https://michaelodaumeh.github.io/images/michael.jpg">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav>
+    <h2 class="logo">Michael Odaumeh</h2>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="index.html#education">Education</a></li>
+      <li><a href="index.html#skills">Skills</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+    <button id="dark-mode-toggle" aria-label="Toggle dark mode" title="Switch between light and dark theme">🌙</button>
+  </nav>
+
+  <header class="hero">
+    <h1>My Projects</h1>
+    <p>Explore my collection of web development projects showcasing modern technologies and creative solutions.</p>
+  </header>
+
+  <!-- Category Buttons -->
+  <div class="category-buttons">
+    <button class="filter-btn active" data-category="all">All</button>
+    <button class="filter-btn" data-category="web">Web Apps</button>
+    <button class="filter-btn" data-category="games">Games</button>
+    <button class="filter-btn" data-category="other">Other</button>
+  </div>
+
+  <!-- Projects Grid -->
+  <section id="projects">
+    <div class="projects-grid">
+      <div class="project-card" data-category="games">
+        <a href="https://michaelodaumeh.github.io/Jeopardy/" target="_blank">
+          <img src="images/project2.png" alt="Interactive Jeopardy Game - Screenshot showing game interface with questions and scoring" class="project-img" loading="lazy" width="400" height="300">
+        </a>
+        <h3>Interactive Jeopardy Game</h3>
+        <p>A fully interactive Jeopardy-style quiz game built with HTML, CSS, and JavaScript. Features dynamic questions fetched from an API, real-time scoring system, and two-player mode for competitive gameplay.</p>
+        <div class="project-tech-stack">
+          <span class="tech-badge html">HTML5</span>
+          <span class="tech-badge css">CSS3</span>
+          <span class="tech-badge js">JavaScript</span>
+          <span class="tech-badge api">API</span>
+        </div>
+        <div class="project-links">
+          <a href="https://michaelodaumeh.github.io/Jeopardy/" target="_blank" class="project-link">🌐 Live Demo</a>
+          <a href="https://github.com/Michaelodaumeh/Jeopardy" target="_blank" class="project-link">📁 GitHub</a>
+        </div>
+      </div>
+      <div class="project-card" data-category="web">
+        <a href="https://michaelodaumeh.github.io/Meme-Exercise/" target="_blank">
+          <img src="images/project3.png" alt="Interactive Meme Generator - Screenshot showing meme creation interface with text overlay tools" class="project-img" loading="lazy" width="400" height="300">
+        </a>
+        <h3>Interactive Meme Generator</h3>
+        <p>A fully interactive web application that enables users to create custom memes with advanced features including image upload via URL, drag-and-drop text positioning, real-time text editing, and PNG download functionality.</p>
+        <div class="project-tech-stack">
+          <span class="tech-badge html">HTML5</span>
+          <span class="tech-badge css">CSS3</span>
+          <span class="tech-badge js">JavaScript</span>
+          <span class="tech-badge api">Canvas API</span>
+        </div>
+        <div class="project-links">
+          <a href="https://michaelodaumeh.github.io/Meme-Exercise/" target="_blank" class="project-link">🌐 Live Demo</a>
+          <a href="https://github.com/Michaelodaumeh/Meme-Exercise" target="_blank" class="project-link">📁 GitHub</a>
+        </div>
+      </div>
+      <div class="project-card" data-category="web">
+        <div class="project-img-container">
+          <div class="placeholder-image">
+            <div class="placeholder-icon">📚</div>
+            <div class="placeholder-title">Book Finder App</div>
+          </div>
+          <div class="coming-soon-overlay">
+            <span class="coming-soon-text">Coming Soon</span>
+          </div>
+        </div>
+        <h3>Book Finder App</h3>
+        <p>A responsive web application built with React that will allow users to search and discover books from a comprehensive database. Features will include real-time search, book details, and a clean, intuitive interface.</p>
+        <div class="project-tech-stack">
+          <span class="tech-badge react">React</span>
+          <span class="tech-badge js">JavaScript</span>
+          <span class="tech-badge css">CSS3</span>
+          <span class="tech-badge api">API</span>
+        </div>
+        <div class="project-links">
+          <span class="project-link coming-soon-link">🚧 Coming Soon</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Michael Odaumeh. All Rights Reserved.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+  
+  <!-- Inline Dark Mode Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const toggle = document.getElementById('dark-mode-toggle');
+      
+      if (toggle) {
+        // Check if dark mode is enabled on page load
+        if (localStorage.getItem('dark-mode') === 'enabled') {
+          document.body.classList.add('dark-mode');
+          toggle.textContent = '☀️';
+        }
+        
+        // Toggle dark mode on button click
+        toggle.addEventListener('click', function(e) {
+          e.preventDefault();
+          document.body.classList.toggle('dark-mode');
+          
+          if (document.body.classList.contains('dark-mode')) {
+            toggle.textContent = '☀️';
+            localStorage.setItem('dark-mode', 'enabled');
+            // Force dark mode styles
+            document.body.style.backgroundColor = '#0f1419';
+            document.body.style.color = '#e2e8f0';
+          } else {
+            toggle.textContent = '🌙';
+            localStorage.setItem('dark-mode', 'disabled');
+            // Reset to light mode
+            document.body.style.backgroundColor = '';
+            document.body.style.color = '';
+          }
+        });
+      }
+    });
+  </script>
+</body>
+</html>
