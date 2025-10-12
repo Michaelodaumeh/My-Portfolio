@@ -240,6 +240,14 @@ section h2::after {
   margin-top: 3rem;
 }
 
+/* Force two columns on medium/large screens to ensure two projects per row */
+@media (min-width: 900px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: start;
+  }
+}
+
 .project-card {
   background: #fff; 
   padding: 0; 
@@ -256,7 +264,7 @@ section h2::after {
 }
 
 .project-card img {
-  width: 460px; 
+  width: 100%; 
   height: 350px;
   justify-content: center;
   object-fit: cover;
@@ -1003,7 +1011,9 @@ body.dark-mode .placeholder-title {
 .testimonials-section {
   padding: 80px 5%;
   background: #f8fafc;
-  margin: 60px 0;
+  border-radius: 16px;
+  justify-content: center;
+  align-items: center;
 }
 
 .testimonials-section h2 {
@@ -1041,6 +1051,8 @@ body.dark-mode .placeholder-title {
   color: #4a5568;
   margin-bottom: 20px;
   position: relative;
+  text-align: center;
+  justify-content: center;
 }
 
 .testimonial-content p::before {
@@ -1070,7 +1082,13 @@ body.dark-mode .placeholder-title {
   color: white;
   text-align: center;
   padding: 80px 5%;
-  margin: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
 }
 
 .cta-title {
@@ -1089,6 +1107,7 @@ body.dark-mode .placeholder-title {
   justify-content: center;
   gap: 1.5rem;
   flex-wrap: wrap;
+  margin-top: 1.5rem;
 }
 
 .cta-btn-primary {
@@ -1125,6 +1144,13 @@ body.dark-mode .placeholder-title {
 
 /* Contact Links Styles */
 .contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+}
+#contact p{
   display: flex;
   justify-content: center;
   gap: 2rem;
