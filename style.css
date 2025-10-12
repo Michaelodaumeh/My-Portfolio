@@ -965,6 +965,48 @@ body.dark-mode .placeholder-title {
   margin: 0;
 }
 
+/* Skill list with inline logos */
+.skill-list {
+  list-style: none;
+  padding: 1rem;
+  margin: 0;
+  display: flex;
+  gap: 1rem 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: transparent;
+  padding: 0.25rem 0.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  color: #2d3748;
+}
+
+.skill-logo svg {
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+
+.skill-name {
+  font-size: 1rem;
+  color: #2d3748;
+}
+
+/* Dark mode adjustments */
+body.dark-mode .skill-item {
+  color: #e2e8f0;
+}
+body.dark-mode .skill-name {
+  color: #e2e8f0;
+}
+
 /* About Section Styles */
 .about-paragraph {
   margin-top: 1.5rem;
