@@ -1213,3 +1213,32 @@ body.dark-mode .skill-name {
 .contact-link:hover {
   color: #2c5aa0;
 }
+ .certificates {
+  padding: 2rem 0;
+}
+
+.certificates h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.certificate-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 350px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.certificate-card img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin-bottom: 0.5rem;
+}
+
+.certificate-card p {
+  font-size: 1rem;
+}
